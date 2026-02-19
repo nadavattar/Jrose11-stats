@@ -1,0 +1,157 @@
+{
+  "name": "RunStatistics",
+  "type": "object",
+  "properties": {
+    "pokemon_id": {
+      "type": "string",
+      "description": "Reference to Pokemon entity"
+    },
+    "game_version": {
+      "type": "string",
+      "enum": [
+        "red",
+        "blue"
+      ],
+      "description": "Which game version the run was on"
+    },
+    "completion_time": {
+      "type": "string",
+      "description": "Total run completion time (HH:MM:SS)"
+    },
+    "completion_level": {
+      "type": "number",
+      "description": "Level at run completion"
+    },
+    "total_losses": {
+      "type": "string",
+      "description": "Total losses during the run (can include + for estimated, e.g. '25+')"
+    },
+    "battle_timestamps": {
+      "type": "object",
+      "description": "Timestamps for each major battle",
+      "properties": {
+        "brock": {
+          "type": "string"
+        },
+        "rival_2": {
+          "type": "string"
+        },
+        "misty": {
+          "type": "string"
+        },
+        "rival_3": {
+          "type": "string"
+        },
+        "lt_surge": {
+          "type": "string"
+        },
+        "erica": {
+          "type": "string"
+        },
+        "rival_4": {
+          "type": "string"
+        },
+        "giovanni_1": {
+          "type": "string"
+        },
+        "koga": {
+          "type": "string"
+        },
+        "sabrina": {
+          "type": "string"
+        },
+        "rival_5": {
+          "type": "string"
+        },
+        "giovanni_2": {
+          "type": "string"
+        },
+        "blaine": {
+          "type": "string"
+        },
+        "giovanni_3": {
+          "type": "string"
+        },
+        "rival_6": {
+          "type": "string"
+        },
+        "lorelei": {
+          "type": "string"
+        },
+        "bruno": {
+          "type": "string"
+        },
+        "agatha": {
+          "type": "string"
+        },
+        "lance": {
+          "type": "string"
+        },
+        "champion": {
+          "type": "string"
+        }
+      }
+    },
+    "battle_losses": {
+      "type": "object",
+      "description": "Number of losses for each major battle (can include + for estimated, e.g. '10+')"
+    },
+    "battle_order": {
+      "type": "object",
+      "description": "Order in which battles were fought (2-13 for non-fixed battles)",
+      "properties": {
+        "rival_2": {
+          "type": "number"
+        },
+        "misty": {
+          "type": "number"
+        },
+        "rival_3": {
+          "type": "number"
+        },
+        "lt_surge": {
+          "type": "number"
+        },
+        "erica": {
+          "type": "number"
+        },
+        "rival_4": {
+          "type": "number"
+        },
+        "giovanni_1": {
+          "type": "number"
+        },
+        "koga": {
+          "type": "number"
+        },
+        "sabrina": {
+          "type": "number"
+        },
+        "rival_5": {
+          "type": "number"
+        },
+        "giovanni_2": {
+          "type": "number"
+        },
+        "blaine": {
+          "type": "number"
+        }
+      }
+    },
+    "moves_used": {
+      "type": "array",
+      "description": "List of moves used during the run",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes about the run"
+    }
+  },
+  "required": [
+    "pokemon_id",
+    "game_version"
+  ]
+}

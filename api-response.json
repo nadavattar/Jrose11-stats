@@ -1,0 +1,236 @@
+﻿[
+    {
+        "id": "1",
+        "pokedex_number": 1,
+        "name": "Bulbasaur",
+        "type_primary": "Grass",
+        "type_secondary": "Poison",
+        "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "youtube_url": "https://www.youtube.com/watch?v=example",
+        "is_evolved": false,
+        "evolution_stage": "pre_evolved",
+        "base_stats": {
+            "hp": 45,
+            "attack": 49,
+            "defense": 49,
+            "speed": 45,
+            "special": 65,
+            "total": 318,
+            "average": 50.6
+        },
+        "moves_level_up": [
+            {
+                "level": 1,
+                "move": "Tackle"
+            },
+            {
+                "level": 1,
+                "move": "Growl"
+            },
+            {
+                "level": 7,
+                "move": "Leech Seed"
+            },
+            {
+                "level": 13,
+                "move": "Vine Whip"
+            },
+            {
+                "level": 20,
+                "move": "Poison Powder"
+            },
+            {
+                "level": 27,
+                "move": "Razor Leaf"
+            },
+            {
+                "level": 34,
+                "move": "Growth"
+            },
+            {
+                "level": 41,
+                "move": "Sleep Powder"
+            },
+            {
+                "level": 48,
+                "move": "Solar Beam"
+            }
+        ],
+        "moves_tm": [
+            "Swords Dance",
+            "Toxic",
+            "Body Slam",
+            "Take Down",
+            "Double-Edge",
+            "Mega Drain",
+            "Solar Beam",
+            "Rage",
+            "Mimic",
+            "Double Team",
+            "Reflect",
+            "Bide",
+            "Rest",
+            "Substitute"
+        ],
+        "completion_time": "3:42:15",
+        "completion_level": 65,
+        "rank": 42
+    },
+    {
+        "id": "2",
+        "pokedex_number": 4,
+        "name": "Charmander",
+        "type_primary": "Fire",
+        "type_secondary": null,
+        "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+        "youtube_url": "https://www.youtube.com/watch?v=example2",
+        "is_evolved": false,
+        "evolution_stage": "pre_evolved",
+        "base_stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "speed": 65,
+            "special": 50,
+            "total": 309,
+            "average": 49.8
+        },
+        "moves_level_up": [
+            {
+                "level": 1,
+                "move": "Scratch"
+            },
+            {
+                "level": 1,
+                "move": "Growl"
+            },
+            {
+                "level": 9,
+                "move": "Ember"
+            },
+            {
+                "level": 15,
+                "move": "Leer"
+            },
+            {
+                "level": 22,
+                "move": "Rage"
+            },
+            {
+                "level": 30,
+                "move": "Slash"
+            },
+            {
+                "level": 38,
+                "move": "Flamethrower"
+            },
+            {
+                "level": 46,
+                "move": "Fire Spin"
+            }
+        ],
+        "moves_tm": [
+            "Mega Punch",
+            "Swords Dance",
+            "Mega Kick",
+            "Toxic",
+            "Body Slam",
+            "Take Down",
+            "Double-Edge",
+            "Submission",
+            "Counter",
+            "Seismic Toss",
+            "Rage",
+            "Dragon Rage",
+            "Dig",
+            "Mimic",
+            "Double Team",
+            "Reflect",
+            "Bide",
+            "Fire Blast",
+            "Swift",
+            "Skull Bash",
+            "Rest",
+            "Substitute"
+        ],
+        "completion_time": "4:05:22",
+        "completion_level": 68,
+        "rank": 58
+    },
+    {
+        "id": "3",
+        "pokedex_number": 25,
+        "name": "Pikachu",
+        "type_primary": "Electric",
+        "type_secondary": null,
+        "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "youtube_url": "https://www.youtube.com/watch?v=example3",
+        "is_evolved": false,
+        "evolution_stage": "middle_evolution",
+        "base_stats": {
+            "hp": 35,
+            "attack": 55,
+            "defense": 30,
+            "speed": 90,
+            "special": 50,
+            "total": 300,
+            "average": 52
+        },
+        "moves_level_up": [
+            {
+                "level": 1,
+                "move": "Thunder Shock"
+            },
+            {
+                "level": 1,
+                "move": "Growl"
+            },
+            {
+                "level": 9,
+                "move": "Thunder Wave"
+            },
+            {
+                "level": 16,
+                "move": "Quick Attack"
+            },
+            {
+                "level": 26,
+                "move": "Swift"
+            },
+            {
+                "level": 33,
+                "move": "Agility"
+            },
+            {
+                "level": 43,
+                "move": "Thunder"
+            }
+        ],
+        "moves_tm": [
+            "Mega Punch",
+            "Mega Kick",
+            "Toxic",
+            "Body Slam",
+            "Take Down",
+            "Double-Edge",
+            "Pay Day",
+            "Submission",
+            "Seismic Toss",
+            "Rage",
+            "Thunderbolt",
+            "Thunder",
+            "Mimic",
+            "Double Team",
+            "Reflect",
+            "Bide",
+            "Swift",
+            "Skull Bash",
+            "Rest",
+            "Thunder Wave",
+            "Substitute"
+        ],
+        "completion_time": "5:18:44",
+        "completion_level": 72,
+        "rank": 98
+    }
+]

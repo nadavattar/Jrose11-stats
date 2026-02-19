@@ -1,0 +1,26 @@
+{
+  "name": "Move",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Move name"
+    },
+    "type": {
+      "type": "string",
+      "description": "Move type (Normal, Fire, Water, etc.)"
+    },
+    "power": {
+      "type": "number",
+      "description": "Move power/damage"
+    },
+    "accuracy": {
+      "type": "number",
+      "description": "Move accuracy percentage"
+    }
+  },
+  "required": [
+    "name",
+    "type"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "TierPlacement",
+  "type": "object",
+  "properties": {
+    "pokemon_id": {
+      "type": "string",
+      "description": "Reference to Pokemon entity"
+    },
+    "tier_type": {
+      "type": "string",
+      "enum": [
+        "overall",
+        "pre_evolved",
+        "middle_evolution",
+        "fully_evolved"
+      ],
+      "description": "Which tier list this placement is for"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "S",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "DNF"
+      ],
+      "description": "Tier ranking"
+    },
+    "rank_within_tier": {
+      "type": "number",
+      "description": "Position within the tier (for ordering)"
+    }
+  },
+  "required": [
+    "pokemon_id",
+    "tier_type",
+    "tier"
+  ]
+}

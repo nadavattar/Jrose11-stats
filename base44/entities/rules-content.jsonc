@@ -1,0 +1,48 @@
+{
+  "name": "RulesContent",
+  "type": "object",
+  "properties": {
+    "section_key": {
+      "type": "string",
+      "description": "Unique identifier for the section (e.g., 'solo_run', 'badge_boost')"
+    },
+    "title": {
+      "type": "string",
+      "description": "Section title"
+    },
+    "icon": {
+      "type": "string",
+      "enum": [
+        "shield",
+        "zap",
+        "trending-up",
+        "book-open"
+      ],
+      "description": "Icon identifier for the section"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order"
+    },
+    "subsections": {
+      "type": "array",
+      "description": "Array of subsections with title and content",
+      "items": {
+        "type": "object",
+        "properties": {
+          "subtitle": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "section_key",
+    "title",
+    "order"
+  ]
+}

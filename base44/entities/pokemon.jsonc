@@ -1,0 +1,108 @@
+{
+  "name": "Pokemon",
+  "type": "object",
+  "properties": {
+    "pokedex_number": {
+      "type": "number",
+      "description": "National Pokedex number (1-151)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Pokemon name"
+    },
+    "type_primary": {
+      "type": "string",
+      "description": "Primary type"
+    },
+    "type_secondary": {
+      "type": "string",
+      "description": "Secondary type (if applicable)"
+    },
+    "sprite_url": {
+      "type": "string",
+      "description": "URL to Pokemon sprite image"
+    },
+    "youtube_url": {
+      "type": "string",
+      "description": "YouTube video URL for the run"
+    },
+    "is_evolved": {
+      "type": "boolean",
+      "description": "Whether this is an evolved form (DEPRECATED - use evolution_stage)"
+    },
+    "evolution_stage": {
+      "type": "string",
+      "enum": [
+        "pre_evolved",
+        "middle_evolution",
+        "fully_evolved"
+      ],
+      "description": "Evolution stage of the Pokemon"
+    },
+    "base_stats": {
+      "type": "object",
+      "description": "Base stats object with hp, attack, defense, speed, special, total, average",
+      "properties": {
+        "hp": {
+          "type": "number"
+        },
+        "attack": {
+          "type": "number"
+        },
+        "defense": {
+          "type": "number"
+        },
+        "speed": {
+          "type": "number"
+        },
+        "special": {
+          "type": "number"
+        },
+        "total": {
+          "type": "number"
+        },
+        "average": {
+          "type": "number"
+        }
+      }
+    },
+    "moves_level_up": {
+      "type": "array",
+      "description": "Array of moves learned by level up with level and move name",
+      "items": {
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "number"
+          },
+          "move": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "moves_tm": {
+      "type": "array",
+      "description": "Array of TM moves available",
+      "items": {
+        "type": "string"
+      }
+    },
+    "completion_time": {
+      "type": "string",
+      "description": "Solo challenge completion time"
+    },
+    "completion_level": {
+      "type": "number",
+      "description": "Level at completion"
+    },
+    "rank": {
+      "type": "number",
+      "description": "Overall ranking in the challenge (across all Pokemon)"
+    }
+  },
+  "required": [
+    "pokedex_number",
+    "name"
+  ]
+}
