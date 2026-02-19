@@ -1,39 +1,56 @@
-**Welcome to your Base44 project** 
+# Jrose11 Stats
 
-**About**
+A comprehensive Pokemon statistics and analysis dashboard.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## Features
 
-This project contains everything you need to run your app locally.
+- **Pokemon Detail View**: In-depth stats and information for individual Pokemon.
+- **Statistics Dashboard**: Visualizations and data analysis.
+- **Comparisons**: Compare different Pokemon side-by-side.
+- **Tier Lists**: View and manage Pokemon tier lists.
+- **Admin Panel**: Manage data and configurations.
 
-**Edit the code in your local development environment**
+## Tech Stack
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+- **Frontend**: React, Vite
+- **Styling**: Tailwind CSS, Shadcn UI
+- **Routing**: React Router
+- **State Management**: React Query (TanStack Query)
 
-**Prerequisites:** 
+## Getting Started
 
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+### Prerequisites
 
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
+- Node.js (v18+ recommended)
+- npm or yarn
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
+### Installation
 
-Run the app: `npm run dev`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nadavattar/Jrose11-stats.git
+   cd Jrose11-stats
+   ```
 
-**Publish your changes**
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+3. Run the development server (Client + Local API Server):
+   ```bash
+   npm run dev:local
+   ```
+   This will start both the frontend (`localhost:5173`) and the local JSON server (`localhost:3001`).
 
-**Docs & Support**
+## Project Structure
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+- `src/api` - Local API client and mock server integration
+- `src/components` - UI components (shadcn/ui) and feature-specific components
+- `src/pages` - Application routes/pages
+- `server` - Local backend server logic
+- `server/data` - JSON data files for the local database
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+## License
+
+MIT

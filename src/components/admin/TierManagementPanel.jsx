@@ -47,17 +47,17 @@ export default function TierManagementPanel() {
     });
 
     const deletePlacement = useMutation({
-        mutationFn: (id) => base44.entities.TierPlacement.delete(id),
+        mutationFn: (/** @type {string} */ id) => base44.entities.TierPlacement.delete(id),
         onSuccess: () => queryClient.invalidateQueries({ queryKey: ['placements'] })
     });
 
     const createPlacement = useMutation({
-        mutationFn: (data) => base44.entities.TierPlacement.create(data),
+        mutationFn: (/** @type {object} */ data) => base44.entities.TierPlacement.create(data),
         onSuccess: () => queryClient.invalidateQueries({ queryKey: ['placements'] })
     });
 
     const updatePlacement = useMutation({
-        mutationFn: ({ id, data }) => base44.entities.TierPlacement.update(id, data),
+        mutationFn: (/** @type {{ id: string, data: object }} */ { id, data }) => base44.entities.TierPlacement.update(id, data),
         onSuccess: () => queryClient.invalidateQueries({ queryKey: ['placements'] })
     });
 
