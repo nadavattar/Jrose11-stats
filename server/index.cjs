@@ -43,6 +43,29 @@ app.get('/api/apps/public/prod/public-settings/by-id/:appId', (req, res) => {
     });
 });
 
+// Database Diagnostic Endpoint
+app.get('/api/diag/db', async (req, res) => {
+    try {
+        const status = mongoose.connection.readyState;
+        const statusNames = ['disconnected', 'connected', 'connecting', 'disconnecting'];
+
+        const pokemonCount = await Pokemon.countDocuments();
+        const statsCount = await RunStatistics.countDocuments();
+        const dbName = mongoose.connection.name;
+
+        res.json({
+            connection: statusNames[status] || 'unknown',
+            database: dbName,
+            counts: {
+                Pokemon: pokemonCount,
+                RunStatistics: statsCount
+            }
+        });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 // Authentication endpoint
 app.post('/api/auth/login', (req, res) => {
     const { password } = req.body;
